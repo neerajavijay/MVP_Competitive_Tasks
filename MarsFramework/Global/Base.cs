@@ -29,7 +29,6 @@ namespace MarsFramework.Global
         public void Inititalize()
         {
 
-            // advisasble to read this documentation before proceeding http://extentreports.relevantcodes.com/net/
             switch (Browser)
             {
 
