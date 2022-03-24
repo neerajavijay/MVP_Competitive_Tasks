@@ -17,6 +17,8 @@ namespace MarsFramework.Global
         public static String ExcelPath = MarsResource.ExcelPath;
         public static string ScreenshotPath = MarsResource.ScreenShotPath;
         public static string ReportPath = MarsResource.ReportPath;
+        public static String FilePath = MarsResource.FilePath;
+
         #endregion
 
         #region reports
@@ -68,9 +70,10 @@ namespace MarsFramework.Global
         {
             // Screenshot
             String img = SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "Report");//AddScreenCapture(@"E:\Dropbox\VisualStudio\Projects\Beehive\TestReports\ScreenShots\");
+            test = new ExtentTest("", "");
             test.Log(LogStatus.Info, "Image example: " + img);
             // end test. (Reports)
-            extent.EndTest(test);
+            //extent.EndTest(test);
             // calling Flush writes everything to the log file (Reports)
             extent.Flush();
             // Close the driver :)            
